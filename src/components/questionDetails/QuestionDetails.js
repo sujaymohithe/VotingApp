@@ -42,7 +42,6 @@ class QuestionDetails extends React.Component {
     redirect(response) {
         if (response) {
             this.props.getQuestionDetails(this.props.questionId);
-            this.forceUpdate();
             this.setState({selectedVote : "", isSaving : false});            
             toastr.success("Vote is submitted successfully");
         }
