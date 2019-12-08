@@ -1,6 +1,13 @@
 ## Browser Support
 The application supported to run in chrome , firefox, Safari browsers. Please refer package json file to see supported browsers
 
+## API https://pollsapi.docs.apiary.io/
+This application is using proxy API with url https://private-anon-7b6ceba2a7-pollsapi.apiary-proxy.com/ as production api url (https://polls.apiblueprint.org/questions?page=1) is not accessible via http://localhost:3000 due to CORS policy.
+
+##Styling for responsive UI
+For larger screens of 1000px and more wider - horizontal list with each row displaying 3 items
+For screens of lesser than 1000px wide - horizontal list with each row displaying 1 item
+
 ## Available Scripts
 
 In the project directory, you can run:

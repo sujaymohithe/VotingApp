@@ -15,12 +15,12 @@ class QuestionDetailsContainer extends React.Component {
     }
 
     componentDidMount() {
+        //below method get all questions list from api
         this.props.getQuestionDetails(this.state.questionId);
     }
 
     render() {
         const { isFetching, questionDetails } = this.props
-        debugger;
         return (
             <div className="section">
                 <div className="SvbtnRight">
@@ -36,7 +36,6 @@ class QuestionDetailsContainer extends React.Component {
 
 //method that copies part of the state to the props of this component.
 function mapStateToProps(state) {
-    debugger;
     return {
         isFetching: state.QuestionDetailsReducer.isFetching,
         questionDetails: state.QuestionDetailsReducer.questionDetails,

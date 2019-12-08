@@ -1,6 +1,6 @@
 import commonApi from '../../api/commonApi';
 
-//Save Question and Answers method 
+//Create new Question with Answers method 
 export function saveQA(input) {
     return function (dispatch) {
         return commonApi.saveQA(input).then(data => {

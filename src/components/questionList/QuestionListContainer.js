@@ -9,7 +9,7 @@ class QuestionListContainer extends React.Component {
         this.props.getQuestionList();
     }
 
-    //this is to populate all questions as a box widget list
+    //this is to populate all questions as a box widget from list
     populateList(eachQuestion, index) {
         return (
             <Question data={eachQuestion} key={index} />

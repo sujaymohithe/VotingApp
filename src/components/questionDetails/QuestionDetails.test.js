@@ -18,7 +18,7 @@ describe('Question Details Container And Question Details Component', () => {
         expect(wrapper.find(QuestionDetailsContainer).length).toBe(1);
     })
 
-    it('should render the Question Widget component', () => {
+    it('should render the QuestionDetail Widget component', () => {
         const wrapper = shallow(
             <Provider store={store}>
                 <QuestionDetails />
@@ -26,7 +26,7 @@ describe('Question Details Container And Question Details Component', () => {
         expect(wrapper.find(QuestionDetails).length).toEqual(1);
     })
 
-    it('renders Question Details widget', () => {
+    it('renders Question Details widget by passing required props from QuestionDetailsContainer component', () => {
         const component = mount(
             <Provider store={store} >
                 <QuestionDetailsContainer isFetching={false} match={{params: {id: 1}}} questionDetails={{question: "Books"}}/>
