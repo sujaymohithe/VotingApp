@@ -6,11 +6,10 @@ import QuestionDetailsContainer from './QuestionDetailsContainer';
 import QuestionDetails from './QuestionDetails';
 import { Provider } from "react-redux";
 import { store } from '../../store';
-import App from '../../App';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe('Question List Container And Question Widget Component', () => {
+describe('Question Details Container And Question Details Component', () => {
     it('Should render the QuestionDetailsContainer component', () => {
         const wrapper = shallow(
             <Provider store={store}>

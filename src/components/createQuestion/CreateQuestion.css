@@ -1,0 +1,68 @@
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.WidgetBox {
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+    flex-direction: row;
+    width: 100%;
+}
+  
+.Box {
+    position: relative;
+    border: 1px solid black;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+}
+
+.Cardheader {
+    margin-bottom: 0px;
+    font-weight: bold;
+    background-color: #999999;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Graphik-Semibold';
+    padding: 10px 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Cardblock {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+.CardFooter {
+    padding: 10px;
+    text-align: right;
+    border-top: 1px solid #cccccc;
+}
+
+.ButtonPrimary {
+  cursor: pointer;
+  text-decoration:none;
+  font-size: 1em;
+  margin: 1em;
+  font-weight: bold;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px;
+  background-color: #999999;
+  color: black;
+}

@@ -25,6 +25,21 @@ class CommonApi {
             return error;
         });
     }
+
+    static saveQA(data) {
+        var jsonQAData =
+        {
+            "question": data.question,
+            "choices": data.answers.split(";")
+        };
+        return axios.post(appConstants.API_URL + "questions?page=1", jsonQAData).then(response => {
+            debugger;
+            return response.status === 201 ? true : false;
+        }).catch(error => {
+            debugger;
+            return error;
+        });
+    }
 }
 
 export default CommonApi;
