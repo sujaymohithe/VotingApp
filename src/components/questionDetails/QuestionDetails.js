@@ -71,7 +71,7 @@ class QuestionDetails extends React.Component {
                                 }
                             </div>
                             <div className="Svbtn">
-                                <button type="button" className="ButtonPrimary" onClick={this.btnSaveClicked.bind(this)}>{this.state.isSaving === true ? "Savings ..." : "Save Vote"}</button>
+                                <button type="button" className="ButtonPrimary" onClick={this.btnSaveClicked.bind(this)}>{this.state.isSaving === true ? "Saving ..." : "Save Vote"}</button>
                             </div>
                         </div >
                     </div>}
