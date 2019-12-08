@@ -1,0 +1,66 @@
+.section{
+    padding: 2em;
+    text-align: left !important;
+}
+
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+table{
+    width: 100%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+
+table tr{
+    border: 1px solid;
+    height: 30px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+.sw{
+    width: 2%
+}
+
+.mw{
+    width: 5%
+}
+
+.lw{
+    width: 10%
+}
+
+.Svbtn{
+    padding-left: 50%;
+    padding-top: 20px;
+}
+
+.SvbtnRight{
+    float: right;
+    padding-top: 20px;
+}
+
+.toast-top-right {
+    top: 200px !important;
+    right: 70px !important;
+}
+
+.ButtonPrimary {
+    cursor: pointer;
+    text-decoration:none;
+    font-size: 1em;
+    margin: 1em;
+    font-weight: bold;
+    padding: 0.25em 1em;
+    border: 2px solid palevioletred;
+    border-radius: 3px;
+    background-color: #999999;
+    color: black;
+  }

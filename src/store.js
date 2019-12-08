@@ -5,10 +5,12 @@ import thunk from 'redux-thunk'
 
 // App Imports
 import * as questionListReducerData from  './reducers/questionList/QuestionListReducer';
+import * as questionDetailsReducerData from  './reducers/questionDetails/QuestionDetailsReducer';
 
 // App Reducer
 const appReducer = combineReducers({
     ...questionListReducerData,
+    ...questionDetailsReducerData
 })
 
 // Root Reducer
